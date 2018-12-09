@@ -1,0 +1,6 @@
+[pi0]
+# Overclock Pi Zero (W)
+arm_freq=1030
+core_freq=500
+sdram_freq=500
+[all]
