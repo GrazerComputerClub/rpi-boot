@@ -1,0 +1,19 @@
+# 128x128:
+
+hdmi_force_hotplug=1
+#hdmi_cvt: <width> <height> <framerate> <aspect> <margins> <interlace> <rb>
+# width        width in pixels
+# height       height in pixels
+# framerate    framerate in Hz
+# aspect       aspect ratio 1=4:3, 2=14:9, 3=16:9, 4=5:4, 5=16:10, 6=15:9
+# margins      0=margins disabled, 1=margins enabled
+# interlace    0=progressive, 1=interlaced
+# rb           0=normal, 1=reduced blanking
+hdmi_cvt=128 128 60 1 0 0 0
+hdmi_group=2
+hdmi_mode=1
+hdmi_mode=87
+#display_rotate: 0 .. Normal, 1 .. 90 deg, 2 .. 180 deg
+#display_rotate=1
+disable_overscan=1
+
