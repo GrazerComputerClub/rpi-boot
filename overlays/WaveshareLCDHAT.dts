@@ -29,24 +29,24 @@
 			#size-cells = <0>;
 
 			waveshare144@0{
-				compatible = "sitronix,st7735r";
+				compatible = "ilitek,ili9163";
 				reg = <0>;
 				pinctrl-names = "default";
 
-				name = "adafruit18_green";
-				spi-max-frequency = <40000000>;
+				name = "waveshare144";
+				spi-max-frequency = <48000000>;
 				rotate = <90>;
 				buswidth = <8>;
-				fps = <40>;
+				fps = <50>;
 				height = <128>;
 				width = <128>;
 				bgr;
 				reset-gpios = <&gpio 27 0>;
 				dc-gpios = <&gpio 25 0>;
+				cs-gpios = <&gpio 8 0>;
 				led-gpios = <&gpio 24 1>;
 				debug = <0>;
 			};
-
 		};
 	};
 };

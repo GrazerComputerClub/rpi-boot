@@ -1,17 +1,25 @@
-# waveshare TFT HAT - cursor keys (rotate 180)
+
+# cursor keys (rotate 180)
 dtoverlay=gpio-key,gpio=19,keycode=108,label="KEY_UP",gpio_pull=2
 dtoverlay=gpio-key,gpio=26,keycode=106,label="KEY_LEFT",gpio_pull=2
 dtoverlay=gpio-key,gpio=5,keycode=105,label="KEY_RIGHT",gpio_pull=2
 dtoverlay=gpio-key,gpio=6,keycode=103,label="KEY_DOWN",gpio_pull=2
 
-# waveshare TFT HAT - cursor keys
+# cursor keys
 #dtoverlay=gpio-key,gpio=6,keycode=108,label="KEY_UP",gpio_pull=2
 #dtoverlay=gpio-key,gpio=5,keycode=106,label="KEY_LEFT",gpio_pull=2
 #dtoverlay=gpio-key,gpio=26,keycode=105,label="KEY_RIGHT",gpio_pull=2
 #dtoverlay=gpio-key,gpio=19,keycode=103,label="KEY_DOWN",gpio_pull=2
 
-# waveshare TFT HAT - key 1-3
+# cursor push - Fn Key (special funktion)
+otoverlay=gpio-key,gpio=13,keycode=46,label="KEY_LEFTCTRL",gpio_pull=2
+
+
+# waveshare TFT HAT - keys
+#T3
 dtoverlay=gpio-key,gpio=16,keycode=44,label="KEY_Z",gpio_pull=2
+#T2
 dtoverlay=gpio-key,gpio=20,keycode=45,label="KEY_X",gpio_pull=2
-#dtoverlay=gpio-key,gpio=13,keycode=46,label="KEY_C",gpio_pull=2
+#T1
 dtoverlay=gpio-key,gpio=21,keycode=28,label="KEY_ENTER",gpio_pull=2
+
