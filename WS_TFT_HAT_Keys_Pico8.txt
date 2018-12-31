@@ -12,7 +12,7 @@ dtoverlay=gpio-key,gpio=6,keycode=103,label="KEY_DOWN",gpio_pull=2
 #dtoverlay=gpio-key,gpio=19,keycode=103,label="KEY_DOWN",gpio_pull=2
 
 # cursor push - Fn Key (special funktion)
-otoverlay=gpio-key,gpio=13,keycode=46,label="KEY_LEFTCTRL",gpio_pull=2
+dtoverlay=gpio-key,gpio=13,keycode=29,label="KEY_LEFTCTRL",gpio_pull=2
 
 
 # waveshare TFT HAT - keys
