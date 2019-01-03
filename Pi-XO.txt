@@ -1,0 +1,53 @@
+# Pi-XO, Rev 0.1 (PCB)
+# ====================
+
+# Keys:
+# -----
+# Pi-XO Fn Key (special funktion)
+dtoverlay=gpio-key,gpio=2,keycode=29,label="KEY_LEFTCTRL",gpio_pull=2
+# Pico 8 Key 'Pause/Menu'
+dtoverlay=gpio-key,gpio=19,keycode=28,label="KEY_ENTER",gpio_pull=2
+# Pico 8 Key 'Left' (0)
+dtoverlay=gpio-key,gpio=26,keycode=105,label="KEY_LEFT",gpio_pull=2
+# Pico 8 Key 'Right' (1)
+dtoverlay=gpio-key,gpio=20,keycode=106,label="KEY_RIGHT",gpio_pull=2
+# Pico 8 Key 'Up' (2)
+dtoverlay=gpio-key,gpio=16,keycode=103,label="KEY_UP",gpio_pull=2
+# Pico 8 Key 'Down' (3)
+dtoverlay=gpio-key,gpio=21,keycode=108,label="KEY_DOWN",gpio_pull=2
+# UART GPIOs used by keys
+enable_uart=0
+# Pico 8 Key 'O' (4)
+dtoverlay=gpio-key,gpio=14,keycode=44,label="KEY_Z",gpio_pull=2
+# Pico 8 Key 'X' (5)
+dtoverlay=gpio-key,gpio=15,keycode=45,label="KEY_X",gpio_pull=2
+
+# Audio:
+# ------
+dtparam=audio=on
+# Mono out via GPIO 13
+dtoverlay=pwm,pin=13,func=4 
+
+# Video:
+# ------
+dtparam=spi=on
+
+#Option 1: 320x240 Display right
+#dtoverlay=ili9341-2-270
+#include Video-320x240.txt
+
+#Option 2: 160x128 Display right
+#dtoverlay=st7735r-2-270
+#include Video-160x128.txt
+
+#Option 3: 160x128 Display left
+dtoverlay=st7735r-2-90
+include Video-160x128.txt
+
+# Interface:
+# ----------
+#USB Ethernet Gadget
+dtoverlay=dwc2
+#WiFi/Blooethooth off
+dtoverlay=pi3-disable-wifi
+dtoverlay=pi3-disable-bt

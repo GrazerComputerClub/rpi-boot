@@ -35,14 +35,14 @@
 
 				name = "sainsmart18";
 				spi-max-frequency = <48000000>;
-				rotate = <90>;
+				rotate = <270>;
 				buswidth = <8>;
 				fps = <50>;
 				height = <160>;
 				width = <128>;
-//  				txbuflen = <40960>;
-				reset-gpios = <&gpio 25 0>;
-				dc-gpios = <&gpio 24 0>;
+//				txbuflen = <40960>;
+				reset-gpios = <&gpio 6 0>;
+				dc-gpios = <&gpio 5 0>;
 				cs-gpios = <&gpio 8 0>;
 				debug = <0>;
 //				debug = <32>;
