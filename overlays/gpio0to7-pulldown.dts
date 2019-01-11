@@ -1,0 +1,27 @@
+/dts-v1/;
+/plugin/;
+
+/{
+   compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+   fragment@1 {
+      target = <&gpio>;
+      __overlay__ {
+
+          gpio8_pulldown: gpio8_pulldown {
+            brcm,pins =      <17 18 27 22 23 24 25 4>; /* wringpi pin 0-7*/
+            brcm,function =  < 0  0  0  0  0  0  0 0>; /* inputs*/
+            brcm,pull =      < 1  1  1  1  1  1  1 1>; /* pull down*/
+         };
+      };
+   };
+
+   fragment@2 {
+	 target = <&leds>;
+	 __overlay__ {
+		 pinctrl-names = "default";
+		 pinctrl-0 = <&gpio8_pulldown>;
+	 };
+   };
+     
+};
