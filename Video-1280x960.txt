@@ -1,4 +1,4 @@
-# 1280x960 - 4 * 320x240:
+# 1280x960 = 4 * 320x240
 
 hdmi_force_hotplug=1
 #hdmi_cvt: <width> <height> <framerate> <aspect> <margins> <interlace> <rb>

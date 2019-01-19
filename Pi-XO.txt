@@ -44,6 +44,10 @@ dtparam=spi=on
 dtoverlay=st7735r-2-90
 include Video-160x128.txt
 
+GPIOs
+# ----------
+dtoverlay=gpio0to7-pulldown
+
 # Interface:
 # ----------
 #USB Ethernet Gadget
@@ -51,3 +55,5 @@ dtoverlay=dwc2
 #WiFi/Blooethooth off
 dtoverlay=pi3-disable-wifi
 dtoverlay=pi3-disable-bt
+
+

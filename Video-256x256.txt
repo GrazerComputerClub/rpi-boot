@@ -1,4 +1,4 @@
-# 256x256 - 2 * 128x128:
+# 256x256 = 2 * 128x128
 
 hdmi_force_hotplug=1
 #hdmi_cvt: <width> <height> <framerate> <aspect> <margins> <interlace> <rb>

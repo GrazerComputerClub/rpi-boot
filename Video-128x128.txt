@@ -1,4 +1,4 @@
-# 128x128:
+# 128x128
 
 hdmi_force_hotplug=1
 #hdmi_cvt: <width> <height> <framerate> <aspect> <margins> <interlace> <rb>

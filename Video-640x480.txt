@@ -1,4 +1,4 @@
-# 640x480 - 2 * 320x240:
+# 640x480 = 2 * 320x240
 
 hdmi_force_hotplug=1
 #hdmi_cvt: <width> <height> <framerate> <aspect> <margins> <interlace> <rb>
