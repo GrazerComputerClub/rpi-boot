@@ -25,7 +25,7 @@ dtoverlay=gpio-key,gpio=15,keycode=45,label="KEY_X",gpio_pull=2
 # Audio:
 # ------
 dtparam=audio=on
-# Mono out via GPIO 13
+# Mono out via GPIO 13, PWM1
 dtoverlay=pwm,pin=13,func=4 
 
 # Video:
