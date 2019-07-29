@@ -1,0 +1,7 @@
+hdmi_force_hotplug=1
+framebuffer_width=1280
+framebuffer_height=720
+hdmi_group=1
+hdmi_mode=4
+disable_overscan=1
+

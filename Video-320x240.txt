@@ -11,7 +11,6 @@ hdmi_force_hotplug=1
 # rb           0=normal, 1=reduced blanking
 hdmi_cvt=320 240 60 1 0 0 0
 hdmi_group=2
-hdmi_mode=1
 hdmi_mode=87
 #display_rotate: 0 .. Normal, 1 .. 90 deg, 2 .. 180 deg
 #display_rotate=1
