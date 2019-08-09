@@ -1,8 +1,10 @@
-# Raspberry Pi boot partition files 
+# GC2 Raspberry Pi boot partition files 
 
 Configuration and overlays
- - Displays
- - Configuration
+ - Video Modes
+ - SPI displays
+ - SoC overclock
+ - HW configuration
  - GPIOs
 
 

@@ -2,7 +2,7 @@
 
 # Uncomment some or all of these to enable the optional hardware interfaces
 dtparam=spi=on
-overlay=WaveshareLCDHAT
+dtoverlay=WaveshareLCDHAT
 
 hdmi_force_hotplug=1
 #hdmi_cvt: <width> <height> <framerate> <aspect> <margins> <interlace> <rb>
@@ -15,19 +15,22 @@ hdmi_force_hotplug=1
 # rb           0=normal, 1=reduced blanking
 hdmi_cvt=128 128 60 1 0 0 0
 hdmi_group=2
-hdmi_mode=1
 hdmi_mode=87
 #display_rotate: 0 .. Normal, 1 .. 90 deg, 2 .. 180 deg
-#display_rotate=1
+display_rotate=0
 disable_overscan=1
 
 # Enable audio (loads snd_bcm2835)
-dtparam=audio=on
+#dtparam=audio=on
 # Mono PWM at Pin 18 or 12  
-# dtoverlay=pwm,pin=18,func=2
-dtoverlay=pwm,pin=12,func=4
+#dtoverlay=pwm,pin=18,func=2
+#dtoverlay=pwm,pin=12,func=4
 
 # Shutdown key - GPIO3
-# dtoverlay=gpio-shutdown
+#dtoverlay=gpio-shutdown
 
-include WS_TFT_HAT_Keys_Pico8
+# Load PICO8 Key settings
+#include WS_TFT_HAT_Keys_Pico8.txt
+
+# Load default Key settings
+#include WaveShareLCDHAT_Keys.txt
