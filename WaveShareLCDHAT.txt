@@ -1,6 +1,5 @@
 # Waveshare LCD HAT - 1.44" TFT 128x128
 
-# Uncomment some or all of these to enable the optional hardware interfaces
 dtparam=spi=on
 dtoverlay=WaveshareLCDHAT
 
@@ -16,6 +15,7 @@ hdmi_force_hotplug=1
 hdmi_cvt=128 128 60 1 0 0 0
 hdmi_group=2
 hdmi_mode=87
+hdmi_force_hotplug=1
 #display_rotate: 0 .. Normal, 1 .. 90 deg, 2 .. 180 deg
 display_rotate=0
 disable_overscan=1
@@ -29,8 +29,8 @@ disable_overscan=1
 # Shutdown key - GPIO3
 #dtoverlay=gpio-shutdown
 
-# Load PICO8 Key settings
-#include WS_TFT_HAT_Keys_Pico8.txt
+# Load PICO8 key settings
+#include WaveShareLCDHAT_PICO8_Keys.txt
 
-# Load default Key settings
+# Load default key settings
 #include WaveShareLCDHAT_Keys.txt
