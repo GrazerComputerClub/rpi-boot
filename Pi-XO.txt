@@ -44,9 +44,17 @@ dtparam=spi=on
 dtoverlay=st7735r-2-90
 include Video-160x128.txt
 
-GPIOs
-# ----------
+# GPIO:
+# ------
+# Activate pull-down resistor for GPIO0-GPIO7
 dtoverlay=gpio0to7-pulldown
+
+# Overclocking:
+# -------------
+# activate overclocking Raspberry Pi Zero (~3%) 
+[pi0]
+arm_freq=1030
+[all]
 
 # Interface:
 # ----------
@@ -55,5 +63,4 @@ dtoverlay=dwc2
 #WiFi/Blooethooth off
 #dtoverlay=pi3-disable-wifi
 dtoverlay=pi3-disable-bt
-
 
