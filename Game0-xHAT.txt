@@ -1,0 +1,38 @@
+# Game0-xHAT, Rev 0.1 (Pi-XO PCB)
+# ===============================
+
+
+# Audio:
+# ------
+dtparam=audio=on
+# Mono out via GPIO 13, PWM1
+dtoverlay=pwm,pin=13,func=4 
+
+# Video:
+# ------
+dtparam=spi=on
+
+#Option 1: 320x240 Display right
+#dtoverlay=ili9341-2-270
+#include Video-320x240.txt
+
+#Option 2: 160x128 Display right
+dtoverlay=st7735r-2-270
+#include Video-160x128.txt
+include Video-320x256.txt
+#include Video-480x384.txt
+
+#Option 3: 160x128 Display left
+#dtoverlay=st7735r-2-90
+#include Video-160x128.txt
+
+# GPIO:
+# ------
+# Activate pull-down resistor for GPIO0-GPIO7
+#dtoverlay=gpio0to7-pulldown
+
+# Interface:
+# ----------
+#USB Ethernet Gadget
+dtoverlay=dwc2
+
