@@ -2,8 +2,10 @@
 # Overclock Pi Zero (W)
 #Pi Zero = OK
 #arm_freq=1176
-#Pi Zero W = OK
-arm_freq=1150
+#Pi Zero W with Kernel 5 = OK
+#arm_freq=1150
+#Pi Zero W with Kernel 6 = OK
+arm_freq=1100
 over_voltage=2
 core_freq=500
 sdram_freq=500
